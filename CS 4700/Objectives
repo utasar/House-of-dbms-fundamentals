@@ -1,0 +1,15 @@
+Description: Study of logical and physical aspects of database management systems. Entity-
+Relationship (ER) and relational models for databases are presented. Relational algebra operations,
+SQL queries, physical database design methods, and operating principles of database systems are
+discussed.
+
+
+
+Topics:
+ DBMS concepts and architecture (Chap 1, 2)
+ Entity-Relationship (ER) model (Chap 3)
+ Relational data model (Chap 5)
+ ER to Relational mapping (Sec. 9.1)
+ Relational algebra (Chap 8)
+ SQL − a relational database language (Chap 6, 7)
+ File organizations and hashing (Chap 16)
