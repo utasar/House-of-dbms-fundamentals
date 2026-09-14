@@ -1,0 +1,53 @@
+CS3700 — In-Class Activity: Membership Records
+Team: Austin and Utsav         
+
+
+              ( MemberID )  ( Name )  ( Email )  ( JoinDate )
+                    \           |         |          /
+                     \          |         |         /
+                    +------------------------------+
+                    |            MEMBER            |
+                    +------------------------------+
+                                   |
+                                   |
+                                 /  \   
+                                / isa\membership type
+                               +------+
+                               /    \
+                              /      \
+                             /        \
+                            v          v
+          +-------------------+      +-------------------+
+          | StandardMember    |      | PremiumMember     |
+          +-------------------+      +-------------------+
+                                               |
+                                               |
+                                    ( MonthlyTrainingHours )
+
+
+
+
+why generalize ?
+You are taking two existing, lower-level entity sets (StandardMember and PremiumMember) that share common attributes and synthesizing them into a higher-level superclass (Member). Specialization works in reverse—starting with a top-level entity and breaking it down into specific subtypes.
+
+identify:
+Superclass: Member
+
+Subclasses: StandardMember, PremiumMember
+
+Shared Attributes (Superclass): MemberID (Primary Key), Name, Email, JoinDate
+
+Subclass-Specific Attribute: MonthlyTrainingHours (belongs exclusively to PremiumMember)
+
+
+Hierarchy Constraints
+Disjointness: Disjoint
+
+Justification: The problem specifies that "every member has exactly one membership type: standard or premium." A member cannot belong to both subclasses simultaneously.
+
+
+
+challenge:
+If the gym wants to explicitly track day-pass members, you could introduce a third subclass (DayPassMember). Doing so would maintain a total specialization constraint, but it would have no unique subclass attributes of its own.
+
+
