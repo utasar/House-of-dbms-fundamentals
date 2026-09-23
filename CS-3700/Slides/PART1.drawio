@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="HDatElZ5seViEqNVBfd1">
+    <mxGraphModel dx="1022" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5UL5mq4BineLZiMldjXK-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vechicle" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="" vertex="1">
+          <mxGeometry height="80" width="120" x="150" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="LicensePlate" vertex="1">
+          <mxGeometry height="80" width="120" x="290" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Manufacturer" vertex="1">
+          <mxGeometry height="80" width="120" x="425" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Model" vertex="1">
+          <mxGeometry height="80" width="120" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="d" vertex="1">
+          <mxGeometry height="80" width="80" x="370" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CAR" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Motorcycle" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;u&gt;VechileID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="180" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;span&gt;SeatingCapacity&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="130" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;span&gt;EngineDisplacement&lt;/span&gt;&lt;span&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="580" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-15" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-3" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="170" as="sourcePoint" />
+            <mxPoint x="300" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-16" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="160" as="sourcePoint" />
+            <mxPoint x="540" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-17" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="250" as="sourcePoint" />
+            <mxPoint x="300" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-18" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-19" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-7" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="280" as="sourcePoint" />
+            <mxPoint x="430" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-22" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-8" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="400" as="sourcePoint" />
+            <mxPoint x="330" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-23" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-9" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="390" as="sourcePoint" />
+            <mxPoint x="560" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-24" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-13" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="550" as="sourcePoint" />
+            <mxPoint x="220" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UL5mq4BineLZiMldjXK-26" edge="1" parent="1" source="5UL5mq4BineLZiMldjXK-14" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="5UL5mq4BineLZiMldjXK-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="550" as="sourcePoint" />
+            <mxPoint x="710" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
