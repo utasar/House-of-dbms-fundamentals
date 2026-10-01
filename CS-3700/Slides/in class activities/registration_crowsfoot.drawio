@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Registration ERD" id="erd1">
+    <mxGraphModel dx="1022" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="student" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Student" vertex="1">
+          <mxGeometry height="30" width="220" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="student_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  student_id&#xa;    student_name&#xa;    phone&#xa;    address&#xa;    major" vertex="1">
+          <mxGeometry height="110" width="220" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="course" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Course" vertex="1">
+          <mxGeometry height="30" width="240" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="course_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  course_id&#xa;    course_name&#xa;FK  instructor&#xa;    location&#xa;    time&#xa;    session" vertex="1">
+          <mxGeometry height="130" width="240" x="440" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="instructor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Instructor" vertex="1">
+          <mxGeometry height="30" width="200" x="760" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="instructor_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  instructor&#xa;    instructor_type" vertex="1">
+          <mxGeometry height="50" width="200" x="760" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="registration" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Registration" vertex="1">
+          <mxGeometry height="30" width="240" x="260" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="registration_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK,FK1  student_id&#xa;PK,FK2  course_id&#xa;        grade" vertex="1">
+          <mxGeometry height="70" width="240" x="260" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="student_attrs" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="registration">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="568.5742857142858" y="200" as="sourcePoint" />
+            <mxPoint x="440.0028571428571" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="instructor_attrs" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;rounded=0;" target="course_attrs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
