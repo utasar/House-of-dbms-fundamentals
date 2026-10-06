@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Clinic ERD" id="clinicerd1">
+    <mxGraphModel dx="1065" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="patient" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Patient" vertex="1">
+          <mxGeometry height="30" width="220" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="patient_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  PatientID&#xa;    PatientName&#xa;    DOB&#xa;    Email" vertex="1">
+          <mxGeometry height="90" width="220" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="patientphone" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="PatientPhone" vertex="1">
+          <mxGeometry height="30" width="220" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="patientphone_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK,FK  PatientID&#xa;PK     Phone" vertex="1">
+          <mxGeometry height="50" width="220" x="40" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Appointment" vertex="1">
+          <mxGeometry height="30" width="240" x="440" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  AppointmentID&#xa;FK  PatientID&#xa;FK  DoctorID&#xa;    AppointmentDate&#xa;    AppointmentTime&#xa;    Reason" vertex="1">
+          <mxGeometry height="130" width="240" x="440" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Doctor" vertex="1">
+          <mxGeometry height="30" width="220" x="840" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  DoctorID&#xa;    DoctorName&#xa;    Speciality&#xa;    OfficeNumber&#xa;FK  DepartmentID" vertex="1">
+          <mxGeometry height="110" width="220" x="840" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="department" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=13;" value="Department" vertex="1">
+          <mxGeometry height="30" width="220" x="840" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="department_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;fontSize=11;" value="PK  DepartmentID&#xa;    DepartmentName&#xa;    Location" vertex="1">
+          <mxGeometry height="70" width="220" x="840" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="patient_attrs" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;" target="appointment_attrs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="doctor_attrs" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;" target="appointment_attrs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="department" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="doctor_attrs">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="patient_attrs" style="edgeStyle=none;html=1;startArrow=ERone;startFill=0;endArrow=ERzeroToMany;endFill=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="patientphone">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
